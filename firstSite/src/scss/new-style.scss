@@ -8,6 +8,12 @@ html {
     font-size: 10px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
 .button {
     background-color: $elements-color;
     color: $bg-color;
@@ -35,6 +41,9 @@ main {
 
 .header {
     max-height: 7rem;
+    &.logo {
+        max-height: 7rem;
+    }
 }
 
 .phone-link {
@@ -48,10 +57,4 @@ main {
         color: $bg-color;
         -webkit-text-stroke: 0.08rem $elements-color;
     }
-}
-
-img {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
 }

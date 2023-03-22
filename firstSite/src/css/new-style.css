@@ -4,6 +4,12 @@ html {
   font-size: 10px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
 .button {
   background-color: #266fff;
   color: #fffefe;
@@ -32,6 +38,9 @@ main {
 .header {
   max-height: 7rem;
 }
+.header.logo {
+  max-height: 7rem;
+}
 
 .phone-link {
   color: #266fff;
@@ -44,10 +53,4 @@ main {
 .phone-link:hover {
   color: #fffefe;
   -webkit-text-stroke: 0.08rem #266fff;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
 }
