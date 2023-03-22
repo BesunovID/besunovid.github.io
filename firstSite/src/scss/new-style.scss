@@ -1,8 +1,57 @@
-.header{
-    font-size: 20px;
-    line-height: 1.5;
-    margin: 60px auto;
-    span{
-        display: block;
+/* Colors */
+$elements-color: #266fff;
+$bg-color: #fffefe;
+$text-color: #191a1c;
+
+/* Basic settings */
+html {
+    font-size: 10px;
+}
+
+.button {
+    background-color: $elements-color;
+    color: $bg-color;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $bg-color;
+        color: $elements-color;
+        border: 1px solid $elements-color;
+        padding: 0.9rem 1.9rem;
     }
+}
+
+/* Typography */ 
+section {
+    padding: 10rem 0;
+}
+
+/* main */ 
+main {
+    padding: 3rem 0;
+}
+
+.header {
+    max-height: 7rem;
+}
+
+.phone-link {
+    color: $elements-color;
+    font-weight: 900;
+    font-size: 2rem;
+    text-decoration: none;
+    height: 7rem;
+    line-height: 7rem;
+    &:hover {
+        color: $bg-color;
+        -webkit-text-stroke: 0.08rem $elements-color;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
