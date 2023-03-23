@@ -1,17 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
 /* Colors */
 $elements-color: #266fff;
 $bg-color: #fffefe;
 $text-color: #191a1c;
+$ff-main: 'Play', sans-serif;
 
 /* Basic settings */
 html {
     font-size: 10px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
+    font-family: $ff-main;
 }
 
 .button {
@@ -21,6 +19,8 @@ img {
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
+    font-family: $ff-main;
+    font-weight: 500;
     &:hover {
         background-color: $bg-color;
         color: $elements-color;
@@ -39,15 +39,18 @@ main {
     padding: 3rem 0;
 }
 
-.header {
-    max-height: 7rem;
-    &.logo {
-        max-height: 7rem;
+.logo {
+    height: 7rem;
+    & img {
+        width: 100%;
+        height: 100%;   
+        object-fit: contain;
     }
 }
 
 .phone-link {
     color: $elements-color;
+    font-family: $ff-main;
     font-weight: 900;
     font-size: 2rem;
     text-decoration: none;
@@ -55,6 +58,7 @@ main {
     line-height: 7rem;
     &:hover {
         color: $bg-color;
-        -webkit-text-stroke: 0.08rem $elements-color;
+        -webkit-text-stroke: 0.15rem $elements-color;
     }
 }
+
