@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 /* Colors */
 $elements-color: #266fff;
@@ -6,26 +6,35 @@ $bg-color: #fffefe;
 $text-color: #191a1c;
 $ff-main: 'Play', sans-serif;
 
+@mixin font($sz, $w, $clr) {
+    font-size: $sz;
+    font-weight: $w;
+    color: $clr;
+    text-decoration: none;
+}
+
 /* Basic settings */
 html {
     font-size: 10px;
+}
+
+body {
     font-family: $ff-main;
+    background-color: $bg-color;
 }
 
 .button {
+    @include font(1.2em, 600, $bg-color);
     background-color: $elements-color;
-    color: $bg-color;
     padding: 1rem 2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     text-transform: uppercase;
-    font-family: $ff-main;
-    font-weight: 500;
     &:hover {
         background-color: $bg-color;
         color: $elements-color;
-        border: 1px solid $elements-color;
-        padding: 0.9rem 1.9rem;
+        border: 2px solid $elements-color;
+        padding: 0.8rem 1.8rem;
     }
 }
 
@@ -37,6 +46,36 @@ section {
 /* main */ 
 main {
     padding: 3rem 0;
+    .main__content {
+        margin-top: 10rem;
+        .main__title {
+            h1{
+                @include font(3.3em, 600, $elements-color);
+                text-transform: uppercase;
+                line-height: 1.2;
+            }
+            .main__subtitle {
+                margin-top: 3rem;
+                @include font(2em, 400, $elements-color);
+            }
+            span {
+                margin-top: 2rem;
+                @include font(1.5em, 400, $bg-color);
+                display: inline-block;
+                padding: 2rem 3rem;
+                background-color: $elements-color;
+                text-align: center;
+            }
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2 {
+                @include font(1.8em, 400, $elements-color);
+            }
+        }
+    }
 }
 
 .logo {
@@ -49,16 +88,10 @@ main {
 }
 
 .phone-link {
-    color: $elements-color;
-    font-family: $ff-main;
-    font-weight: 900;
-    font-size: 2rem;
-    text-decoration: none;
-    height: 7rem;
-    line-height: 7rem;
+    @include font(2.2em, 600, $elements-color);
     &:hover {
         color: $bg-color;
-        -webkit-text-stroke: 0.15rem $elements-color;
+        -webkit-text-stroke: 0.1rem $elements-color;
     }
 }
 
