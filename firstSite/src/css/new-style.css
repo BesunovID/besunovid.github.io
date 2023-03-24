@@ -35,6 +35,9 @@ section {
 
 /* main */
 main {
+  height: 100vh;
+  background: #fff url(../img/main-background.jpeg) center center no-repeat;
+  background-size: cover;
   padding: 3rem 0;
 }
 main .main__content {
@@ -67,15 +70,48 @@ main .main__content .main__title span {
   text-align: center;
 }
 main .main__content .contact-form {
+  background-color: #fff;
+  text-align: center;
+  border: 2px solid #266fff;
+  border-radius: 1.5rem;
+  padding: 2rem 3rem;
+}
+main .main__content .contact-form__title {
+  font-size: 2em;
+  font-weight: 400;
+  color: #266fff;
+  text-decoration: none;
+  line-height: 1.5;
+  margin-bottom: 5rem;
+}
+main .main__content .contact-form__input {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
 }
-main .main__content .contact-form h2 {
+main .main__content .contact-form__input label {
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #266fff;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #fffefe;
+  position: absolute;
+  transform: translateY(-50%);
+  padding: 0 0.5rem;
+  z-index: 1;
+}
+main .main__content .contact-form__input input {
   font-size: 1.8em;
   font-weight: 400;
   color: #266fff;
   text-decoration: none;
+  padding-top: 1rem;
+  border: 1px solid #266fff;
+}
+main .main__content .contact-form__button {
+  margin-top: 2rem;
 }
 
 .logo {

@@ -45,6 +45,9 @@ section {
 
 /* main */ 
 main {
+    height: 100vh;
+    background: #fff url(../img/main-background.jpeg) center center no-repeat;
+    background-size: cover;
     padding: 3rem 0;
     .main__content {
         margin-top: 10rem;
@@ -68,11 +71,38 @@ main {
             }
         }
         .contact-form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            h2 {
-                @include font(1.8em, 400, $elements-color);
+            background-color: #fff;
+            text-align: center;
+            border: 2px solid $elements-color;
+            border-radius: 1.5rem;
+            padding: 2rem 3rem;
+            &__title {
+                @include font(2em, 400, $elements-color);
+                line-height: 1.5;
+                margin-bottom: 5rem;
+            }
+            &__input {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 3rem;
+                label {
+                    @include font(1.3em, 400, $elements-color);
+                    display: inline-block;
+                    background-color: $bg-color;
+                    position: absolute;
+                    transform: translateY(-50%);
+                    padding: 0 0.5rem;
+                    z-index: 1;
+                }
+                input {
+                    @include font(1.8em, 400, $elements-color);
+                    padding-top: 1rem;
+                    border: 1px solid $elements-color;
+                }
+            }
+            &__button{
+                margin-top: 2rem;
             }
         }
     }
