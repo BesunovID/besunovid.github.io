@@ -20,9 +20,10 @@ body {
   border: none;
   border-radius: 7px;
   text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
 }
 .button:hover {
-  background-color: #fffefe;
+  background-color: #d9e5ff;
   color: #266fff;
   border: 2px solid #266fff;
   padding: 0.8rem 1.8rem;
@@ -41,10 +42,10 @@ main {
   padding: 3rem 0;
 }
 main .main__content {
-  margin-top: 10rem;
+  margin-top: 15rem;
 }
 main .main__content .main__title h1 {
-  font-size: 3.3em;
+  font-size: 3.7em;
   font-weight: 600;
   color: #266fff;
   text-decoration: none;
@@ -52,15 +53,15 @@ main .main__content .main__title h1 {
   line-height: 1.2;
 }
 main .main__content .main__title .main__subtitle {
-  margin-top: 3rem;
-  font-size: 2em;
+  margin-top: 4rem;
+  font-size: 2.5em;
   font-weight: 400;
   color: #266fff;
   text-decoration: none;
 }
 main .main__content .main__title span {
-  margin-top: 2rem;
-  font-size: 1.5em;
+  margin-top: 10rem;
+  font-size: 2em;
   font-weight: 400;
   color: #fffefe;
   text-decoration: none;
@@ -74,7 +75,7 @@ main .main__content .contact-form {
   text-align: center;
   border: 2px solid #266fff;
   border-radius: 1.5rem;
-  padding: 2rem 3rem;
+  padding: 4rem 3rem;
 }
 main .main__content .contact-form__title {
   font-size: 2em;
@@ -111,7 +112,7 @@ main .main__content .contact-form__input input {
   border: 1px solid #266fff;
 }
 main .main__content .contact-form__button {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .logo {
