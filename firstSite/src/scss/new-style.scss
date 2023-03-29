@@ -39,9 +39,21 @@ body {
     }
 }
 
-/* Typography */ 
-section {
-    padding: 10rem 0;
+.logo {
+    height: 7rem;
+    img {
+        width: 100%;
+        height: 100%;   
+        object-fit: contain;
+    }
+}
+
+.phone-link {
+    @include font(2.2em, 600, $elements-color);
+    &:hover {
+        color: $bg-color;
+        -webkit-text-stroke: 0.1rem $elements-color;
+    }
 }
 
 /* main */ 
@@ -109,20 +121,43 @@ main {
     }
 }
 
-.logo {
-    height: 7rem;
-    img {
-        width: 100%;
-        height: 100%;   
-        object-fit: contain;
+/* block features with slider */
+.features{
+    .section-header{
+        @include font(3.5em, 600, $elements-color);
+        margin: 12rem 0 6rem 0;
+        text-align: center;
     }
-}
-
-.phone-link {
-    @include font(2.2em, 600, $elements-color);
-    &:hover {
-        color: $bg-color;
-        -webkit-text-stroke: 0.1rem $elements-color;
+    .slider{
+        .slick-arrow{
+            &:before{
+                color: $elements-color;
+            }
+        }
+        &__block{
+            margin: 2rem 0;
+            text-align: center;
+            .slider-img{
+                height: 28vh;
+                min-height: 250px;
+                margin: 0 0.4rem;
+                img{
+                    margin: 0 auto;
+                    width: 100%; 
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            h3{
+                @include font(1.9em, 600, $elements-color);
+                margin: 2rem 0 1.5rem 0;
+            }
+            p{
+                @include font(1.4em, 400, $elements-color);
+                margin: 0 auto;
+                width: 80%;
+            }
+        }
     }
 }
 

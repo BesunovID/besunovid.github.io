@@ -29,9 +29,25 @@ body {
   padding: 0.8rem 1.8rem;
 }
 
-/* Typography */
-section {
-  padding: 10rem 0;
+.logo {
+  height: 7rem;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.phone-link {
+  font-size: 2.2em;
+  font-weight: 600;
+  color: #266fff;
+  text-decoration: none;
+}
+.phone-link:hover {
+  color: #fffefe;
+  -webkit-text-stroke: 0.1rem #266fff;
 }
 
 /* main */
@@ -115,23 +131,46 @@ main .main__content .contact-form__button {
   margin-top: 5rem;
 }
 
-.logo {
-  height: 7rem;
-}
-.logo img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.phone-link {
-  font-size: 2.2em;
+/* block features with slider */
+.features .section-header {
+  font-size: 3.5em;
   font-weight: 600;
   color: #266fff;
   text-decoration: none;
+  margin: 12rem 0 6rem 0;
+  text-align: center;
 }
-.phone-link:hover {
-  color: #fffefe;
-  -webkit-text-stroke: 0.1rem #266fff;
+.features .slider .slick-arrow:before {
+  color: #266fff;
+}
+.features .slider__block {
+  margin: 2rem 0;
+  text-align: center;
+}
+.features .slider__block .slider-img {
+  height: 28vh;
+  min-height: 250px;
+  margin: 0 0.4rem;
+}
+.features .slider__block .slider-img img {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.features .slider__block h3 {
+  font-size: 1.9em;
+  font-weight: 600;
+  color: #266fff;
+  text-decoration: none;
+  margin: 2rem 0 1.5rem 0;
+}
+.features .slider__block p {
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #266fff;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 80%;
 }
